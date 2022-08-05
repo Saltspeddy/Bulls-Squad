@@ -38,7 +38,7 @@ svg{
 
 ul{ 
     width: 100%;
-    margin: 50px 0; /* To remove default bottom margin */ 
+    margin: 50px 0 10vh 0; /* To remove default bottom margin */ 
     padding: 0; /* To remove default left padding */
     color: white;
     text-decoration: none;
@@ -181,7 +181,10 @@ footer > :nth-child(1){
 }
 
 @media screen and (max-width: 800px)
-{
+{   
+    .nav{
+        height: 100vh;
+    }
     .container{
     grid-template-rows: 400px auto 400px;
     }
