@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body{
     overflow-x: hidden;
     margin: 0;
@@ -20,17 +21,13 @@ svg{
 .nav{
     position: fixed;
     top: 0px;
-
     height: 100vh;
-    width: 150px;
-
+    width: 250px;
     font-family: 'Outfit', sans-serif;
     background-color: black;
     line-height: 2em;
-    
     transition: all .5s ease-in-out;
     z-index: 900;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -38,12 +35,11 @@ svg{
 
 ul{ 
     width: 100%;
-    margin: 50px 0 10vh 0; /* To remove default bottom margin */ 
-    padding: 0; /* To remove default left padding */
+    margin: 50px 0 10vh 0;
+    padding: 0;
     color: white;
     text-decoration: none;
     list-style-type: none;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -56,11 +52,9 @@ a{
 }
 
 .container{
-    /* background-color: aqua; */
     position: relative;
     top: 0px;
     width: 100vw;
-    /* height: 450vh; */
     display: grid;
     grid-template-rows: 90vh auto auto;
     grid-template-areas: 
@@ -98,7 +92,7 @@ a{
     background-color: #FAFAFF;
     display: grid;
     gap: 2em;
-    grid-template-rows: 400px 400px 600px 400px;
+    grid-template-rows: 600px 600px 800px 600px;
 }
 
 .our__Team > *{
