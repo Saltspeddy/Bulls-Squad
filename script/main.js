@@ -64,5 +64,8 @@ function changeDay(value){
 }
 
 function swipe(value){
+    value = parseInt(value);
+    console.log(value + 1);
+    document.querySelector(".days").style.width = ""+ (value + 1) * 100+"vw";
     document.querySelector(".days").style.transform = "translatex(" + value * -100 + "vw)";
 }

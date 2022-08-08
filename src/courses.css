@@ -55,7 +55,7 @@ a{
 }
 
 .container{
-    position: absolute;
+    position: relative;
     top: 0;
     height: 100%;
     width: 100%;
@@ -126,7 +126,7 @@ a{
 
     border-bottom: 1px solid gray;
 
-    transition: all .4s ;
+    transition: all .5s ;
 }
 #days{
     z-index: 100;
@@ -136,8 +136,9 @@ svg{
 }
 
 .days{
+    width: 200vw;
     margin-top: 70px;
-
+    overflow-x: hidden;
     display: grid;
     grid-template-columns: repeat(4,100vw);
 

@@ -15,6 +15,7 @@ body{
     z-index: 1000;
 }
 svg{
+    /* height: 50px; */
     color: aliceblue;
 }
 .nav{
@@ -76,7 +77,7 @@ a{
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(83,15,24,1) 64%, rgba(214,25,66,1) 100%);
     color: white;
-    font-size: clamp(2em, 5vw, 5em);
+    font-size: clamp(2em, 8vw, 6em);
     
     display: grid;
     grid-template-columns: 1fr .5fr;
@@ -84,7 +85,7 @@ a{
 }
 
 .title > :nth-child(1){
-    margin-left: 30px;
+    margin-left: 50px;
     font-family: 'Outfit', sans-serif;
     display: flex;
     align-items: center;
@@ -98,7 +99,7 @@ a{
     background-color: #FAFAFF;
     display: grid;
     gap: 2em;
-    grid-template-rows: 400px 400px 600px 400px;
+    grid-template-rows: 75vh 75vh 90vh 75vh;
 }
 
 .our__Team > *{
@@ -132,6 +133,7 @@ a{
 }
 
 .description{
+    /* font-size: clamp(2em, 5vw, 4em); */
     margin: 15px;
     font-family: 'Overpass', sans-serif;
     display: flex;
