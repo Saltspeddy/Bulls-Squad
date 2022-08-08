@@ -98,7 +98,7 @@ a{
     background-color: #FAFAFF;
     display: grid;
     gap: 2em;
-    grid-template-rows: 75vh 75vh 90vh 75vh;
+    grid-template-rows: 60vh 60vh 90vh 60vh;
 }
 
 .our__Team > *{
