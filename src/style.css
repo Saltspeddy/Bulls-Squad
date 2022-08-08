@@ -77,8 +77,7 @@ a{
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(83,15,24,1) 64%, rgba(214,25,66,1) 100%);
     color: white;
-    font-size: clamp(2em, 8vw, 6em);
-    
+    font-size: clamp(2em, 5vw, 5em);    
     display: grid;
     grid-template-columns: 1fr .5fr;
     box-shadow: 0px 10px 18px #888888;
