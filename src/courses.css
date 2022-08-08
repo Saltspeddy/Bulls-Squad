@@ -136,7 +136,7 @@ svg{
 }
 
 .days{
-    width: 200vw;
+    width: 100vw;
     margin-top: 70px;
     overflow-x: hidden;
     display: grid;
