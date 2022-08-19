@@ -16,13 +16,12 @@ body, html{
 
 .container{
     background-color:white;
+    height: auto;
     width: 25em;
-    height:auto;
+    color: rgb(103, 103, 103);
     
     border: 5px solid white;
-    /* border-image: linear-gradient(60deg, rgba(2,0,36,1) 0%, rgba(83,15,24,1) 64%, rgba(214,25,66,1) 100%); */
     border-radius: 10px;
-    /* border-image-slice: 1; */
 
     display: flex;
     flex-direction: column;
@@ -42,8 +41,21 @@ body, html{
 }
 
 button{
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+    color: rgb(103, 103, 103);
     background: none;
     border: none;
+
+}
+
+button:hover{
+    background-color: rgb(177, 177, 177);
+    color: black;
+    transition: all .5s;
+
 }
 
 @media screen and (max-width: 600px) {
