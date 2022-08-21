@@ -20,7 +20,7 @@ function trainings(){
             days[i].style.transform = "translatey(0px)";
             days[i].style.visibility = "visible";
         }
-        document.querySelector("#icon").innerHTML = '<svg style="color: white;" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" /></svg>;';
+        document.querySelector("#icon").innerHTML = '<svg style="color: black;" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" /></svg>;';
     }
     if( a == false){
         document.querySelector('.selector > :nth-child(2)').style.height = "40px";
@@ -33,12 +33,12 @@ function trainings(){
         for( let i = 0 ; i < days.length; i++){
             days[i].style.visibility = "hidden";
         }
-        document.querySelector("#icon").innerHTML = '<svg style="color: white;" id="icon" width="30px" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>';
+        document.querySelector("#icon").innerHTML = '<svg style="color: black;" id="icon" width="30px" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>';
     }
     a = !a;
 }
 
-function changeDay(value){
+function changeDay(value){ //changes the videos that appear on the page depending on what you chose at trainings()
     
     let days = document.querySelectorAll(".day");
     let idOfExercise = days[value].id;
@@ -57,7 +57,7 @@ function changeDay(value){
         for( let i = 0 ; i < days.length; i++){
             days[i].style.visibility = "hidden";
         }
-        document.querySelector("#icon").innerHTML = '<svg style="color: white;" id="icon" width="30px" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>';
+        document.querySelector("#icon").innerHTML = '<svg style="color: black;" id="icon" width="30px" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>';
     }
     a = !a;
     swipe(idOfExercise);
@@ -65,7 +65,6 @@ function changeDay(value){
 
 function swipe(value){
     value = parseInt(value);
-    console.log(value + 1);
     document.querySelector(".days").style.width = ""+ (value + 1) * 100+"vw";
     document.querySelector(".days").style.transform = "translatex(" + value * -100 + "vw)";
 }
