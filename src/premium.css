@@ -2,22 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Spectral:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-body, html{
-    background:
-    linear-gradient(60deg, rgba(2,0,36,1) 0%, rgba(83,15,24,1) 64%, rgba(214,25,66,1) 100%);
-    height: 100%;
-    width: 100%;
-    margin: 0;
-
-    font-family: 'Outfit', sans-serif;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow-x: hidden;
-}
 
 .menu{
     position: fixed;
@@ -60,6 +45,22 @@ ul{
 
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+body, html{
+    background:
+    linear-gradient(60deg, rgba(2,0,36,1) 0%, rgba(83,15,24,1) 64%, rgba(214,25,66,1) 100%);
+    height: 100%;
+    width: 100%;
+    margin: 0;
+
+    font-family: 'Outfit', sans-serif;
+
+    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -116,4 +117,9 @@ button:hover{
         border: none;
         border-radius: 10px;
     }
+}
+
+a{
+    text-decoration: none;
+    color: white;
 }
